@@ -83,13 +83,6 @@ searchBar.addEventListener("input" , (e) => {
 
         
 })
-
-// users.forEach(user => {
-//     const isVisible =
-//       user.firstname.toLowerCase().includes(value) ||
-//       user.lastname.toLowerCase().includes(value)
-//     user.element.classList.toggle("hidden", !isVisible)
-//   })
     
 //Companies//
     
