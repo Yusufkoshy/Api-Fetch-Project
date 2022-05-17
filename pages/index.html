@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Document</title>
+</head>
+<body>            
+    <header>
+        <nav>
+            <div class="logo">
+                <span>
+                   <em>T</em>or
+                </span>
+                <span>
+                    <em>N</em>ado
+                </span>
+            </div>
+            <ul> 
+                <li><a data-link="sec1" class="scroll__to">Persons</a> </li>
+                <li><a data-link="sec2" class="scroll__to" >Companies</a></li>
+                <li><a data-link="sec3" class="scroll__to">Books</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="search__sec">
+        <form action="#" method="get" class="search__form" onsubmit="preventSubmit(event)">
+            <input type="text" name="Persons search" class="search__bar" placeholder=" Type to search..." >
+            <i class="fas fa-search"></i>
+        </form>
+    </div>
+        <div class="loader hidden" >
+            <svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"   enable-background="new 0 0 0 0" xml:space="preserve" width="50" height="50">  
+                <path fill="#000"   d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">  
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s"  from="0 50 50" to="360 50 50" repeatCount="indefinite" />
+                </path>
+            </svg>
+        </div>
+    <section id="sec1" class="persons__section">
+        <template class="wrapper">
+            <div class="profile__wrapper">
+                <div class="cover">
+                    <img src="" alt="profile picture" class="profile__pic">
+                </div>
+                <main> 
+                                <div class="span__container">
+                                    <span class="first__name"></span>
+                                 </div>
+                                <div class="span__container">
+                                     <span class="last__name"></span>
+                                </div>
+                                <div class="span__container">
+                                    <span class="email"></span>
+                                </div>
+                                <div class="span__container">
+                                    <span class="phone"></span>
+                                </div>
+                                <div class="span__container">
+                                    <span class="birthday"></span>
+                                </div>
+                    </main>
+            </template>        
+   </section>
+
+   <div class="loader hidden" >
+    <svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"   enable-background="new 0 0 0 0" xml:space="preserve" width="50" height="50">  
+        <path fill="#000"   d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">  
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s"  from="0 50 50" to="360 50 50" repeatCount="indefinite" />
+        </path>
+    </svg>
+</div>   
+<section id="sec2" class="companies__wrapper">
+    <!-- <div class="company__card">
+        <figure> 
+            <img src="../assets/css/IMG_20190318_215624-01.jpeg" alt="Company Logo">
+        </figure>
+        <div class="company__details">
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+        </div>
+    </div> -->
+</section>
+
+<div class="loader hidden" >
+    <svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"   enable-background="new 0 0 0 0" xml:space="preserve" width="50" height="50">  
+        <path fill="#000"   d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">  
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s"  from="0 50 50" to="360 50 50" repeatCount="indefinite" />
+        </path>
+    </svg>
+</div>  
+<section id="sec3" class="books__wrapper">
+    
+    <!-- <div class="book__description">
+
+            <img src="../assets/images/any.jpg" alt="Book image">
+            <h2>Title</h2>
+            <h4>author</h4>
+            <p class="description__text"> <span class="bold__word">Description:</span> "Number One,' said Alice. 'Of course not,' Alice cautiously replied, not feeling at all this grand procession, came THE KING AND QUEEN OF HEARTS. Alice was soon submitted to by the Hatter, 'or you'll.",</p>
+            <p class="description__text">Published : 2010-05-19</p>
+            <p class="description__text">Publisher : Nulla Rerum</p>
+            <div class="book__cover">
+                <h2 class="hover__word">Hover Here...</h2>
+            </div>
+    </div> -->
+    
+</section>
+
+<footer>
+    <p>
+     Copyright © 2022 Tornado - Design: Yusuf Muhammad
+   </p>
+ </footer>
+    <script src="../assets/script/main.js"></script>
+</body>
+</html>

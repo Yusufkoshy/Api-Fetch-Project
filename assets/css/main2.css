@@ -1,0 +1,396 @@
+/* Start of global style*/
+:root {
+    --light-blue: #0074D9;
+    --white: #F2F2F2;
+    --orange: orange;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(226, 147, 1);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: orange;
+}
+
+/* End of global style*/
+
+/* Start of Navbar style*/
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--orange);
+}
+
+@media (max-width:332px){
+    nav {
+        flex-direction: column;
+}
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--orange);
+    align-items: center;
+    justify-content: center;
+    margin-right: 2em;
+}
+
+@media (max-width:550px){
+    ul {
+        margin-right: 0.5em;
+}
+}
+
+ul li, span {
+    color: white;
+    font-size: 20px;
+}
+
+@media (max-width:550px) {
+    ul li, span {
+        font-size: 15px;
+}
+}
+
+@media (max-width:332px) {
+    ul li, span {
+        margin-bottom: 1em;
+}
+}
+
+.logo {
+    margin-inline: 4em;
+    padding-block: 1em;
+    font-size:20px;
+    font-weight:  900;
+}
+
+@media (max-width:550px){
+    .logo {
+        margin-inline: 0em;
+        margin-left: 0.5em;
+}
+
+}
+
+li a{
+    cursor: pointer;
+    padding-inline: 1em;
+    padding-block: 1em;
+    transition: 0.9s ease;  
+    border-radius: 0.5em;
+}
+
+a:hover {
+    background-color: rgb(238, 143, 0);
+    transition: 0.9s ease;
+}
+
+/* End of Navbar style*/
+
+/* Start of Search style*/
+
+.search__sec {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search__form {
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 1em;
+    padding-block: 1em;
+    border-radius: 3em;
+    border: solid black 1px;
+    transition: 0.7s ease;
+}
+
+.search__form:hover{
+    padding-inline: 5em;
+    transition: 0.7s ease;
+}
+
+.search__bar {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding-left: 1em;
+    font-size: 16px;
+} 
+
+.fa-search {
+    padding-right: 0.5em;
+}
+
+/* End of Search style*/
+
+/* Start of Persons section style*/
+
+.persons__section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-block: 3em;
+    margin-inline: 4em;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile__wrapper {
+    min-width: 13em;
+    min-height: 24em;
+    border-radius: 1em;
+    background-color: rgb(197, 131, 8);
+    box-shadow: 0 0 4px 3px orange;
+    margin: 1em;
+    margin-inline: 2em;
+}
+
+.cover {
+    background-image: url(../images/red-facebook-cover-6.jpg);
+    background-size: cover;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.cover img {
+    width: 7em;
+    height: 8em;
+    border-radius: 50%;
+    margin-block: 0.5em;
+    transform: translateY(65%);
+    transition: 0.7s ease;
+}
+
+.cover img:hover {
+    border-radius: 1em;
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+}
+main span {
+    padding: 0.5em;
+    padding-inline: 1.5em;
+    color: var(--light-blue);
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.span__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ddd;
+    box-shadow: 0px 3px 3px 2px #888888 ;
+    border-radius: 2em;
+    margin-block: 0.5em;
+    margin-inline: 0.5em;
+}
+
+/* End of Persons section style*/
+
+/* Start of Companies section style*/
+
+.companies__wrapper {
+    margin-block: 4em;
+    margin-inline: 8em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: solid orange 1em ;
+    border-bottom: solid orange 1em ;
+    border-radius: 1em;
+}
+
+.company__card{
+    width: 15em;
+    height: 20em;
+    border-radius: 1em; 
+    margin-block: 2em;
+    margin-inline: 2em;
+    box-shadow: 0 0 4px 3px orange;
+}
+
+figure img {
+    width: 15em;
+    height: 20em;
+    border-radius: 1em;
+}
+
+.company__details {
+    position: relative;
+    top: -100%;
+    width: 15em;
+    height: 20em;
+    border-radius: 1em;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+    transform: translateY(10%);
+    transition: 0.4s ease;
+    opacity: 0;
+}
+.company__card:hover .company__details {
+    opacity: 1;
+    transform: translateY(-2%);
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+h3 , p {
+    padding: 0.5em;
+    color: var(--white);
+}
+/* End of Companies section style*/
+
+/* Start of Books section style*/
+
+.books__wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 2em;
+    text-align: center;
+
+}
+
+
+.book__description {
+    width: 25em;
+    height: 30em;
+    background-image: url(../images/dark-blue-modern-blurred-background-vector.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 4px 3px var(--light-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+    border-radius: 2em;
+    margin-block: 2em;
+    margin-inline: 2em;
+    color: white;
+}
+
+@media(max-width:421px){
+    .book__description {
+        min-width: 20em;
+    }
+}
+
+.book__description img {
+    width: 10em;
+    height: 10em;
+    margin-block: 1em;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0 4px 3px var(--light-blue);
+}
+
+.description__text {
+    color: white;
+    font-weight: bold;
+}
+
+.bold__word{
+    font-weight: bold;
+}
+
+.book__cover{
+    position: absolute;
+    top: 0%;
+    width: 25em;
+    height: 30em;
+    border-radius: 1em;
+    background-image: url(../images/book.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    transition: 0.9s ease;
+}
+
+.book__description:hover .book__cover {
+    transform: translateX(100%);
+    transition: 0.9s ease;
+}
+
+@media(max-width:421px){
+    .book__cover {
+        width: 20em;
+    }
+}
+
+.hover__word {
+    color: #ddd;
+    margin-top: 5em;
+}
+
+/* End of Books section style*/
+/*start footer style*/
+
+footer {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+footer p {
+    color: #666a6e;
+}
+
+/*end footer style*/
+
+.loader {
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
